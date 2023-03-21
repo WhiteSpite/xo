@@ -62,15 +62,18 @@ while play:
             counter1 += 1
             if counter1 == 3:
                 win = True
+                break
         if game_table[mark_place] == game_table[str(i) + mark_place[1]]:
             counter2 += 1
             if counter2 == 3:
                 win = True
+                break
         if mark_place[0] == mark_place[1]:
             if game_table[mark_place] == game_table[str(i) + str(i)]:
                 counter3 += 1
                 if counter3 == 3:
                     win = True
+                    break
     clear_counters()
 
     if win:
